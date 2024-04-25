@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Calcula cuántos paneles caben en tu techo!</h1>
+    <div>
+      <h2>Ingresa las medidas de tu techo</h2>
+      <input
+        type="number"
+        name="altoTecho"
+        id="altoTecho"
+        placeholder="Altura del techo (mts)"
+      />
+
+      <input
+        type="number"
+        name="baseTecho"
+        id="baseTecho"
+        placeholder="Altura del techo (mts)"
+      />
+    </div>
+
+    <div>
+      <h2>Ingresa las medidas de tus paneles solares</h2>
+      <input
+        type="number"
+        name="altoPanel"
+        id="altoPanel"
+        placeholder="Altura del panel solar (mts)"
+      />
+      <input
+        type="number"
+        name="basePanel"
+        id="basePanel"
+        placeholder="Base del panel solar (mts)"
+      />
+    </div>
+    <br></br>
+    <button onclick="calculoPanelesEnTecho()">Calcular</button>
+
+    <h3 id="resultado"></h3>
+
+    <script src="./techos_paneles.js"></script>
+
+  </body>
+</html>
