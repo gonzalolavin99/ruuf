@@ -27,7 +27,7 @@ function calculoPanelesEnTecho() {
 
     //Validación que el área del panel no sea mayor al área del techo
     if (areaPanel > areaTecho){
-        document.querySelector('#resultado').textContent = "El área del panel no puede ser  superior al área del techo.";
+        document.querySelector('#resultado').textContent = "Los paneles son muy grandes y no caben en tu techo";
         limpiarCampos();
     return
     }
@@ -39,8 +39,10 @@ function calculoPanelesEnTecho() {
     //Mostrar resultado en HTML
     if (cantidadDePaneles === 1){
         document.querySelector('h3').textContent = `Cabe ${cantidadDePaneles} panel solar en el techo`;
+    }else if(cantidadDePaneles===0){
+    document.querySelector('h3').textContent = `Esos paneles solares no caben en tu techo:(`;
     }else{
-    document.querySelector('h3').textContent = `Caben ${cantidadDePaneles} paneles solares en el techo`;
+        document.querySelector('h3').textContent = `Caben ${cantidadDePaneles} paneles solares en el techo`;
     };
 
     limpiarCampos();
